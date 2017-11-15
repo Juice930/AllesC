@@ -52,7 +52,7 @@ void main(void) {
     GPIOPinTypeGPIOOutput(GPIO_PORTE_BASE, GPIO_PIN_0);
 
     TimerConfigure(TIMER0_BASE, TIMER_CFG_PERIODIC);
-    TimerLoadSet(TIMER0_BASE, TIMER_A, 55);//16MHz/24kHz=666.666 alv
+    TimerLoadSet(TIMER0_BASE, TIMER_A, 110);
 
     IntMasterEnable();
     IntEnable(INT_TIMER0A);
